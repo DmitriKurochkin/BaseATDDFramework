@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D3E9AEC5-A4DA-4990-9217-3484296FE6A9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AIMS.Tests.Common</RootNamespace>
+    <AssemblyName>AIMS.Tests.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>68d86fc5</NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TechTalk.SpecFlow, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecFlow.2.0.0\lib\net45\TechTalk.SpecFlow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver, Version=2.53.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.2.53.0\lib\net40\WebDriver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=2.53.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.2.53.0\lib\net40\WebDriver.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonSettings.cs" />
+    <Compile Include="Context.cs" />
+    <Compile Include="PageLibrary\Base\PageBase.cs" />
+    <Compile Include="PageLibrary\Base\PageNavigation.cs" />
+    <Compile Include="PageLibrary\Base\WebElementExtentions.cs" />
+    <Compile Include="PageLibrary\Pages\AnalyzerPage.cs" />
+    <Compile Include="PageLibrary\Pages\ConfigurationPages\AgentsPage.cs" />
+    <Compile Include="PageLibrary\Pages\ConfigurationPages\AllUsersPage.cs" />
+    <Compile Include="PageLibrary\Pages\ConfigurationPages\ConfigurationPage.cs" />
+    <Compile Include="PageLibrary\Pages\ConfigurationPages\CustomAlertRulesPage.cs" />
+    <Compile Include="PageLibrary\Pages\ConfigurationPages\DownloadAgentPage.cs" />
+    <Compile Include="PageLibrary\Pages\ConfigurationPages\ErrorFiltersPage.cs" />
+    <Compile Include="PageLibrary\Pages\ConfigurationPages\GlobalSettingsPage.cs" />
+    <Compile Include="PageLibrary\Pages\ConfigurationPages\HelpPage.cs" />
+    <Compile Include="PageLibrary\Pages\ConfigurationPages\LicenceKeyGeneratorPage.cs" />
+    <Compile Include="PageLibrary\Pages\ConfigurationPages\PluginsPage.cs" />
+    <Compile Include="PageLibrary\Pages\ConfigurationPages\ProActivityPage.cs" />
+    <Compile Include="PageLibrary\Pages\ConfigurationPages\ProfilePage.cs" />
+    <Compile Include="PageLibrary\Pages\ConfigurationPages\ReportsPage.cs" />
+    <Compile Include="PageLibrary\Pages\ConfigurationPages\SettingsPage.cs" />
+    <Compile Include="PageLibrary\Pages\ConfigurationPages\UsersPage.cs" />
+    <Compile Include="PageLibrary\Pages\DashBoardPage.cs" />
+    <Compile Include="PageLibrary\Pages\EventsPage.cs" />
+    <Compile Include="PageLibrary\Pages\OverviewMainPage.cs" />
+    <Compile Include="PageLibrary\Pages\LoginPage.cs" />
+    <Compile Include="PageLibrary\Pages\ToplogyPage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings\TestCompanies.cs" />
+    <Compile Include="Settings\User.cs" />
+    <Compile Include="TestUtil\ActionAttempter.cs" />
+    <Compile Include="TestUtil\Log.cs" />
+    <Compile Include="TestUtil\Waiter.cs" />
+    <Compile Include="UI\ScreenCapture.cs" />
+    <Compile Include="UI\ScreenShooter.cs" />
+    <Compile Include="UI\UiException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PageLibrary\WebObjects\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WebDrivers\chromedriver.exe" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\CodeContracts.MSBuild.1.9.10714.2\build\CodeContracts.MSBuild.targets" Condition="Exists('..\packages\CodeContracts.MSBuild.1.9.10714.2\build\CodeContracts.MSBuild.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\CodeContracts.MSBuild.1.9.10714.2\build\CodeContracts.MSBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CodeContracts.MSBuild.1.9.10714.2\build\CodeContracts.MSBuild.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

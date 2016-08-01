@@ -1,0 +1,12 @@
+C:\AIMS.Tests\ClassLibrary1\bin\Debug\TechTalk.SpecFlow.dll
+C:\AIMS.Tests\ClassLibrary1\bin\Debug\WebDriver.dll
+C:\AIMS.Tests\ClassLibrary1\bin\Debug\WebDriver.Support.dll
+C:\AIMS.Tests\ClassLibrary1\bin\Debug\WebDriver.xml
+C:\AIMS.Tests\ClassLibrary1\bin\Debug\WebDriver.Support.xml
+C:\AIMS.Tests\ClassLibrary1\bin\Debug\AIMS.Tests.Common.dll.config
+C:\AIMS.Tests\ClassLibrary1\bin\Debug\AIMS.Tests.Common.dll
+C:\AIMS.Tests\ClassLibrary1\bin\Debug\AIMS.Tests.Common.pdb
+C:\AIMS.Tests\ClassLibrary1\obj\Debug\AIMS.Tests.Common.dll
+C:\AIMS.Tests\ClassLibrary1\obj\Debug\AIMS.Tests.Common.pdb
+C:\AIMS.Tests\ClassLibrary1\obj\Debug\AIMS.Tests.Common.csprojResolveAssemblyReference.cache
+C:\AIMS.Tests\ClassLibrary1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
