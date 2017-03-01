@@ -10,3 +10,14 @@ C:\AIMS.Tests\ClassLibrary1\obj\Debug\AIMS.Tests.Common.dll
 C:\AIMS.Tests\ClassLibrary1\obj\Debug\AIMS.Tests.Common.pdb
 C:\AIMS.Tests\ClassLibrary1\obj\Debug\AIMS.Tests.Common.csprojResolveAssemblyReference.cache
 C:\AIMS.Tests\ClassLibrary1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\dkurochkin\Source\Repos\BaseATDDFramework\AIMS.Tests.Common\bin\Debug\AIMS.Tests.Common.dll.config
+C:\Users\dkurochkin\Source\Repos\BaseATDDFramework\AIMS.Tests.Common\bin\Debug\AIMS.Tests.Common.dll
+C:\Users\dkurochkin\Source\Repos\BaseATDDFramework\AIMS.Tests.Common\bin\Debug\AIMS.Tests.Common.pdb
+C:\Users\dkurochkin\Source\Repos\BaseATDDFramework\AIMS.Tests.Common\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\dkurochkin\Source\Repos\BaseATDDFramework\AIMS.Tests.Common\bin\Debug\TechTalk.SpecFlow.dll
+C:\Users\dkurochkin\Source\Repos\BaseATDDFramework\AIMS.Tests.Common\bin\Debug\WebDriver.dll
+C:\Users\dkurochkin\Source\Repos\BaseATDDFramework\AIMS.Tests.Common\bin\Debug\WebDriver.Support.dll
+C:\Users\dkurochkin\Source\Repos\BaseATDDFramework\AIMS.Tests.Common\bin\Debug\WebDriver.xml
+C:\Users\dkurochkin\Source\Repos\BaseATDDFramework\AIMS.Tests.Common\bin\Debug\WebDriver.Support.xml
+C:\Users\dkurochkin\Source\Repos\BaseATDDFramework\AIMS.Tests.Common\obj\Debug\AIMS.Tests.Common.dll
+C:\Users\dkurochkin\Source\Repos\BaseATDDFramework\AIMS.Tests.Common\obj\Debug\AIMS.Tests.Common.pdb

@@ -114,16 +114,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\AIMS.Tests.Common.csproj">
-      <Project>{d3e9aec5-a4da-4990-9217-3484296fe6a9}</Project>
-      <Name>AIMS.Tests.Common</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="WebDrivers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AIMS.Tests.Common\AIMS.Tests.Common.csproj">
+      <Project>{d3e9aec5-a4da-4990-9217-3484296fe6a9}</Project>
+      <Name>AIMS.Tests.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
